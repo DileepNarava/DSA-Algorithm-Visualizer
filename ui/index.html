@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DSA Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2 class="title">DSA Algorithm Visualizer</h2>
+
+<div class="card">
+  <div class="controls">
+    <div class="group">
+      <label>Algorithm</label>
+      <select id="algo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="linear">Linear Search</option>
+        <option value="binary">Binary Search</option>
+        <option value="bfs">Graph BFS</option>
+        <option value="dfs">Graph DFS</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <label>Speed</label>
+      <input type="range" id="speed" min="50" max="1000" value="300">
+    </div>
+
+    <div class="buttons">
+      <button class="btn primary" onclick="generateArray()">Generate</button>
+      <button class="btn success" onclick="start()">Start</button>
+      <button class="btn danger" onclick="reset()">Reset</button>
+      <button class="btn secondary" id="themeBtn" onclick="toggleTheme()">🌙 Dark</button>
+    </div>
+  </div>
+
+  <div id="array"></div>
+  <div id="graph"></div>
+
+
+  <div class="status">
+    <span id="statusText">Ready</span>
+  </div>
+</div>
+
+<!-- IMPORTANT: JS MUST BE LAST -->
+<script src="script.js"></script>
+</body>
+</html>
