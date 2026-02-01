@@ -1,138 +1,152 @@
-🧠 DSA Algorithm Visualizer
+# 🧠 DSA Algorithm Visualizer
 
-A DSA Algorithm Visualizer built using Java + HTML + CSS + JavaScript to visually demonstrate how popular algorithms work step by step.
+🌐 **Live Demo:**  
+👉 https://dileepnarava.github.io/DSA-Algorithm-Visualizer/
 
-This project helps learners understand algorithm behavior visually and serves as a strong portfolio & interview project.
+A **DSA Algorithm Visualizer** built using **Java + HTML + CSS + JavaScript** to visually demonstrate how popular algorithms work **step by step**.
 
-🚀 Features
+This project is designed for **learning, interview preparation, and portfolio showcase**.
 
-🔵 Bubble Sort visualization
+---
+## 🎥 Live Demo
 
-🟣 Merge Sort visualization
+![DSA Algorithm Visualizer Demo](assets/demo.gif)
 
-🔴 Quick Sort visualization
+## 📸 Screenshots
 
-🎛 Real-time speed control
+### Sorting Visualization
+![Sorting](assets/sorting.png)
 
-🔽 Algorithm selection dropdown
+### Dark Mode UI
+![Dark Mode](assets/darkmode.png)
 
-🎲 Random array generation
+### Graph Algorithms
+![Graphs](assets/graphs.png)
 
-🔄 Reset animation support
 
-📊 Step-by-step visualization using Java-generated states
+## 🚀 Features
 
-🧩 Technologies Used
+- 🔵 Bubble Sort visualization  
+- 🟣 Merge Sort visualization  
+- 🔴 Quick Sort visualization  
+- 🔍 Linear Search & Binary Search  
+- 🌐 Graph Traversals (BFS & DFS)  
+- 🎛 Real-time speed control  
+- 🔽 Algorithm selection dropdown  
+- 🎲 Random array generation  
+- 🌙 Dark mode UI  
+- 📊 Step-by-step visualization using Java-generated states  
 
-Java – Algorithm implementation & step recording
+---
 
-HTML – UI structure
+## 🧩 Technologies Used
 
-CSS – Visualization styling
+- **Java** – Algorithm implementation & step recording  
+- **HTML** – UI structure  
+- **CSS** – Styling & animations  
+- **JavaScript** – Visualization & interaction logic  
+- **Git & GitHub** – Version control & deployment  
 
-JavaScript – Animation & interaction logic
+---
 
-VS Code – Development environment
+## 🏗️ Project Structure
 
-🏗️ Project Structure
 DSA-Algorithm-Visualizer/
 │
 ├── src/
-│   ├── sorting/
-│   │   ├── BubbleSort.java
-│   │   ├── MergeSort.java
-│   │   └── QuickSort.java
-│   ├── searching/
-│   ├── graphs/
-│   ├── utils/
-│   │   └── Step.java
-│   └── Main.java
-│
-├── ui/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+│ ├── sorting/
+│ ├── searching/
+│ ├── graphs/
+│ └── utils/
 │
 ├── docs/
-└── README.md
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+│
+├── assets/
+│ ├── sorting.png
+│ ├── searching.png
+│ ├── graph.png
+│ └── demo.gif
+│
+├── README.md
+└── .gitignore
 
-⚙️ How It Works
+---
 
-Algorithms are implemented in Java
 
-Each algorithm records execution steps as:
+---
 
-array state
+## ⚙️ How It Works
 
-compared indices (i, j)
+1. Algorithms are implemented in **Java**
+2. Each algorithm records execution steps:
+   - array state
+   - compared indices (`i`, `j`)
+3. Java converts steps into **JSON**
+4. JavaScript reads JSON and animates bars in the browser
+5. UI allows:
+   - speed control
+   - algorithm switching
+   - reset & regeneration
 
-Java converts these steps into JSON
+---
 
-JavaScript reads the JSON and animates bars in the browser
+## ▶️ How to Run Locally
 
-UI controls allow:
-
-speed adjustment
-
-algorithm switching
-
-reset & regeneration
-
-▶️ How to Run the Project
-1️⃣ Compile Java Code
+### 1️ Compile Java
+```bash
 javac -d src src/utils/*.java src/sorting/*.java src/Main.java
 
-2️⃣ Run Java (Generate Steps)
-java -cp src Main
+2 Run Java (Generate Steps)
+   java -cp src Main
 
+3️ Run Visualizer
 
-This prints JSON output like:
+ Open docs/index.html
 
-[
-  {"array":[40,20,60,10,90],"i":0,"j":1},
-  {"array":[20,40,60,10,90],"i":0,"j":1}
-]
+ Use Live Server
 
-3️⃣ Run the Visualizer
+ Select algorithm → Adjust speed → Click Start
 
-Open ui/index.html in VS Code
+  | Algorithm     | Time Complexity | Space Complexity |
+| ------------- | --------------- | ---------------- |
+| Bubble Sort   | O(n²)           | O(1)             |
+| Merge Sort    | O(n log n)      | O(n)             |
+| Quick Sort    | O(n log n) avg  | O(log n)         |
+| Linear Search | O(n)            | O(1)             |
+| Binary Search | O(log n)        | O(1)             |
+| BFS / DFS     | O(V + E)        | O(V)             |
 
-Right-click → Open with Live Server
-
-Choose algorithm
-
-Adjust speed
-
-Click Start
-
-📈 Algorithms & Complexity
-Algorithm	Time Complexity	Space Complexity
-Bubble Sort	O(n²)	O(1)
-Merge Sort	O(n log n)	O(n)
-Quick Sort	O(n log n) avg	O(log n)
 🎯 Use Cases
 
-Learning Data Structures & Algorithms
-
-Understanding algorithm behavior visually
+Learning DSA visually
 
 Interview preparation
 
-Portfolio showcase project
+Teaching & demonstrations
+
+Portfolio showcase
 
 🔮 Future Enhancements
-
-Searching algorithms (Linear, Binary)
-
-Graph algorithms (BFS, DFS)
 
 Live Java ↔ JavaScript communication
 
 Time & swap counters
 
+Custom array input
+
 Mobile-friendly UI
+
+More graph algorithms
 
 👨‍💻 Author
 
-Dileep
-Built with ❤️ to master DSA and system thinking
+Dileep Narava
+Built with ❤️ to master DSA & system thinking 
+
+---
+
+
+
